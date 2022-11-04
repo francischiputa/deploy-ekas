@@ -91,15 +91,12 @@ dev_db = {
 }
 prod_db = {
     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
-        'ENGINE': 'mysql://${{ MYSQLUSER }}:${{ MYSQLPASSWORD }}@${{ MYSQLHOST }}:${{ MYSQLPORT }}/${{ MYSQLDATABASE }}',
-        'USER': 'root',
-        'PASSWORD': 'nWAdFkut1Y93cdMaP7qG',
-        'HOST': 'containers-us-west-88.railway.app',
-        'PORT': '7442',
-        'OPTIONS': {
-          'autocommit': True
-        },
+        'USER': 'postgres',
+        'PASSWORD': 'DxVHFvJTtiJIFRITs1tI',
+        'HOST': 'containers-us-west-99.railway.app',
+        'PORT': '7160',
     }
 }
 DATABASES = dev_db

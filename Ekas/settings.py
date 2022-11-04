@@ -91,10 +91,12 @@ dev_db = {
 }
 prod_db = {
     'default': {
-        'NAME': 'mbfzambia_ekas',
-        'ENGINE': 'mysql.connector.django',
-        'USER': 'mbfzambia_root',
-        'PASSWORD': 'Jack2022!',
+        'NAME': 'railway',
+        'ENGINE': 'mysql://${{ MYSQLUSER }}:${{ MYSQLPASSWORD }}@${{ MYSQLHOST }}:${{ MYSQLPORT }}/${{ MYSQLDATABASE }}',
+        'USER': 'root',
+        'PASSWORD': 'nWAdFkut1Y93cdMaP7qG',
+        'HOST': 'containers-us-west-88.railway.app',
+        'PORT': '7442',
         'OPTIONS': {
           'autocommit': True
         },
